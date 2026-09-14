@@ -11,9 +11,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.signal</groupId>
+    <groupId>pl.hubleg</groupId>
     <artifactId>simple-grpc</artifactId>
-    <version>JGITVER</version>
+    <version>0.2.1</version>
   </parent>
 
   <artifactId>simple-grpc-generator</artifactId>

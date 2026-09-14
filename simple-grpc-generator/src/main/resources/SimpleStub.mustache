@@ -59,7 +59,7 @@ public final class {{className}} {
          * @return the exception that should be forwarded
          */
         protected Throwable mapException(final Throwable e) {
-            return org.signal.grpc.simple.ServerCalls.mapException(e);
+            return pl.hubleg.grpc.simple.ServerCalls.mapException(e);
         }
     }
 
@@ -87,7 +87,7 @@ public final class {{className}} {
                 {{#methods}}
                 {{^isManyInput}}
                 case METHOD_ID_{{methodNameUpperUnderscore}}:
-                    org.signal.grpc.simple.ServerCalls.{{simpleCallsMethodName}}(({{inputType}}) request,
+                    pl.hubleg.grpc.simple.ServerCalls.{{simpleCallsMethodName}}(({{inputType}}) request,
                             (io.grpc.stub.ServerCallStreamObserver<{{outputType}}>) responseObserver,
                             serviceImpl::{{methodNameCamelCase}},
                             serviceImpl::mapException);
@@ -106,7 +106,7 @@ public final class {{className}} {
                 {{#methods}}
                 {{#isManyInput}}
                 case METHOD_ID_{{methodNameUpperUnderscore}}:
-                    return (io.grpc.stub.StreamObserver<Req>) org.signal.grpc.simple.ServerCalls.{{simpleCallsMethodName}}(
+                    return (io.grpc.stub.StreamObserver<Req>) pl.hubleg.grpc.simple.ServerCalls.{{simpleCallsMethodName}}(
                             (io.grpc.stub.ServerCallStreamObserver<{{outputType}}>) responseObserver,
                             serviceImpl::{{methodNameCamelCase}},
                             serviceImpl::mapException);

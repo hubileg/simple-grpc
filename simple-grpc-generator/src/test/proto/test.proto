@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package org.signal.grpc.simple.test;
+package pl.hubleg.grpc.simple.test;
 
 service Test {
   rpc Unary(UnaryRequest) returns (UnaryResponse) {}

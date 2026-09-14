@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-package org.signal.grpc.simple.example;
+package pl.hubleg.grpc.simple.example;
 
 import io.grpc.stub.StreamObserver;
 import java.util.concurrent.atomic.AtomicLong;

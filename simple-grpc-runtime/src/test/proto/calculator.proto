@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option java_multiple_files = true;
 
-package org.signal.grpc.simple;
+package pl.hubleg.grpc.simple;
 
 service Calculator {
   rpc Add(AdditionRequest) returns (AdditionResponse) {}

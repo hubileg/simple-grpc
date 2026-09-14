@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-package org.signal.grpc.simple;
+package pl.hubleg.grpc.simple;
 
 import com.google.protobuf.compiler.PluginProtos;
 import com.salesforce.jprotoc.ProtocPluginTesting;
